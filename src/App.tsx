@@ -4,14 +4,14 @@ import Button from './components/Button/Button';
 import { useState } from 'react';
 
 import { BsFillCalendarFill } from 'react-icons/bs';
+import Like from './components/Like';
 
 function App() {
   const items = ['New York', 'Los Angeles', 'San Francisco'];
 
   return (
     <div>
-      <BsFillCalendarFill color="red" size="40" />
-      <Button onClick={() => {}}>My Button</Button>
+      <Like onClick={() => console.log('clicked')} />
     </div>
   );
 }
